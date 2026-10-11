@@ -1,599 +1,560 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#6b4eff" />
-    <meta
-      name="description"
-      content="Learn about DigiLocker, Aadhaar and PAN services, then test your digital safety knowledge."
-    />
-    <title>DigitalLearn | Digital Services Training</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="nav">
-      <a class="brand" href="#home" aria-label="DigitalLearn home"
-        >Digital<span>Learn</span></a
-      >
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        aria-label="Open navigation"
-        aria-expanded="false"
-        aria-controls="siteNav"
-      >
-        ☰
-      </button>
-      <nav id="siteNav">
-        <a href="#home">Home</a>
-        <a href="#modules">Training Modules</a>
-        <a href="#quiz">Quiz</a>
-      </nav>
-    </header>
-    <main>
-      <section class="hero" id="home">
-        <div>
-          <span class="eyebrow">COLLEGE PROJECT • DIGITAL LITERACY</span>
-          <h1>Training on DigiLocker, Aadhaar &amp; PAN Services</h1>
-          <p>
-            Learn how to use important digital government services safely,
-            explore bite-sized training modules, and check your knowledge with a
-            quick quiz.
-          </p>
-          <div class="actions">
-            <a class="btn primary" href="#modules">Explore Training ↓</a>
-            <a class="btn secondary" href="#quiz">Take the Quiz</a>
-          </div>
-          <p class="hero-note">
-            ✓ Free learning · ✓ Mobile friendly · ✓ No Aadhaar or PAN number
-            required
-          </p>
-        </div>
-        <aside class="hero-card" aria-label="Course steps">
-          <div class="hero-step">
-            <span class="stat">01</span>
-            <div>
-              <strong>Learn the basics</strong>
-              <p>DigiLocker, Aadhaar and PAN</p>
-            </div>
-          </div>
-          <div class="hero-step">
-            <span class="stat">02</span>
-            <div>
-              <strong>Stay safe online</strong>
-              <p>Spot scams and protect details</p>
-            </div>
-          </div>
-          <div class="hero-step">
-            <span class="stat">03</span>
-            <div>
-              <strong>Test your knowledge</strong>
-              <p>10 quick multiple-choice questions</p>
-            </div>
-          </div>
-          <div class="progress-wrap">
-            <div class="progress-label">
-              <span>Your learning journey</span
-              ><strong id="progressText">0 of 4 modules</strong>
-            </div>
-            <div class="progress"><span id="progressBar"></span></div>
-          </div>
-        </aside>
-      </section>
 
-      <section class="section intro-section">
-        <div class="section-head">
-          <span class="eyebrow">LEARN AT YOUR OWN PACE</span>
-          <h2>Everything in one place.</h2>
-          <p class="muted">
-            No account, backend or database needed for this learning demo. Read
-            a module, mark it complete, and take the quiz when you are ready.
-          </p>
-        </div>
-        <div class="feature-row">
-          <div class="feature">
-            <span class="feature-icon">📘</span>
-            <div>
-              <strong>Simple explanations</strong>
-              <p>Clear summaries of important services.</p>
-            </div>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">🛡️</span>
-            <div>
-              <strong>Safety first</strong>
-              <p>Learn how to protect personal information.</p>
-            </div>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">📝</span>
-            <div>
-              <strong>Instant quiz result</strong>
-              <p>Get your score and review the answers.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6b4eff" />
+  <meta name="description"
+    content="Learn about DigiLocker, Aadhaar and PAN services, then test your digital safety knowledge." />
+  <title>DigitalLearn | Digital Services Training</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-      <section class="section modules-section" id="modules">
-        <div class="section-head left">
-          <span class="eyebrow">TRAINING MODULES</span>
-          <h2>Digital services, explained simply.</h2>
-          <p class="muted">
-            Read through each module and mark it complete to track your
-            progress.
-          </p>
-        </div>
-        <div class="module-grid">
-          <article class="module" data-module="digilocker">
-            <div class="module-top">
-              <span class="module-num">MODULE 01</span
-              ><span class="module-icon">📂</span>
-            </div>
-            <h3>DigiLocker</h3>
-            <p>
-              DigiLocker is a Government of India digital platform for accessing
-              and sharing digital documents.
-            </p>
-            <h4>Key things to know</h4>
-            <ul>
-              <li>It can provide access to issued digital documents.</li>
-              <li>Use the official DigiLocker website or app.</li>
-              <li>Keep account credentials and OTPs private.</li>
-              <li>Check document details before sharing them.</li>
-            </ul>
-            <div class="tip">
-              <strong>Safety tip:</strong> Never tell an OTP to someone claiming
-              to be support staff.
-            </div>
-            <button
-              class="btn module-complete"
-              type="button"
-              data-complete="digilocker"
-            >
-              Mark module complete
-            </button>
-          </article>
-          <article class="module" data-module="aadhaar">
-            <div class="module-top">
-              <span class="module-num">MODULE 02</span
-              ><span class="module-icon">🪪</span>
-            </div>
-            <h3>Aadhaar Services</h3>
-            <p>
-              Official Aadhaar services help people access eligible services and
-              manage selected Aadhaar-related tasks.
-            </p>
-            <h4>Key things to know</h4>
-            <ul>
-              <li>Use official UIDAI channels for Aadhaar services.</li>
-              <li>Review the website address before entering information.</li>
-              <li>Share Aadhaar information only when genuinely required.</li>
-              <li>Never publish Aadhaar numbers or OTPs in public.</li>
-            </ul>
-            <div class="tip">
-              <strong>Safety tip:</strong> This training website will never ask
-              you to enter an Aadhaar number.
-            </div>
-            <button
-              class="btn module-complete"
-              type="button"
-              data-complete="aadhaar"
-            >
-              Mark module complete
-            </button>
-          </article>
-          <article class="module" data-module="pan">
-            <div class="module-top">
-              <span class="module-num">MODULE 03</span
-              ><span class="module-icon">🧾</span>
-            </div>
-            <h3>PAN Services</h3>
-            <p>
-              PAN-related online services include application, verification and
-              other tax-service workflows.
-            </p>
-            <h4>Key things to know</h4>
-            <ul>
-              <li>
-                Use official Income Tax Department or authorised service
-                channels.
-              </li>
-              <li>
-                Understand the difference between official sites and lookalikes.
-              </li>
-              <li>
-                Do not send PAN details through unknown links or messages.
-              </li>
-              <li>Be careful with unexpected fees or urgent requests.</li>
-            </ul>
-            <div class="tip">
-              <strong>Safety tip:</strong> Never enter your PAN details into
-              this academic training demo.
-            </div>
-            <button
-              class="btn module-complete"
-              type="button"
-              data-complete="pan"
-            >
-              Mark module complete
-            </button>
-          </article>
-          <article class="module safety-module" data-module="safety">
-            <div class="module-top">
-              <span class="module-num">MODULE 04</span
-              ><span class="module-icon">🔐</span>
-            </div>
-            <h3>Digital Safety</h3>
-            <p>
-              Good habits help you use online government services with more
-              confidence.
-            </p>
-            <ul class="safety-list">
-              <li>✓ Never share OTPs or passwords.</li>
-              <li>✓ Verify the domain before signing in.</li>
-              <li>✓ Avoid unknown links in SMS or messaging apps.</li>
-              <li>✓ Use a screen lock and sign out on shared devices.</li>
-              <li>✓ Share only information that is genuinely required.</li>
-            </ul>
-            <div class="tip safety-tip">
-              <strong>Remember:</strong> If a message pressures you to act
-              immediately, pause and verify it independently.
-            </div>
-            <button
-              class="btn module-complete"
-              type="button"
-              data-complete="safety"
-            >
-              Mark module complete
-            </button>
-          </article>
-        </div>
-        <div class="center">
-          <a class="btn primary" href="#quiz">I’m ready for the quiz →</a>
-        </div>
-      </section>
-
-      <section class="section quiz-section" id="quiz">
-        <div class="form-wrap wide">
-          <div class="quiz-heading">
-            <div>
-              <span class="eyebrow">KNOWLEDGE QUIZ</span>
-              <h2>Check what you learned.</h2>
-              <p class="muted">
-                10 questions · One answer per question · Instant result
-              </p>
-            </div>
-            <div class="quiz-badge">
-              10<br />
-              <small>questions</small>
-            </div>
-          </div>
-          <form id="quizForm">
-            <div id="questions"></div>
-            <button class="btn primary full" type="submit">
-              Submit Quiz →
-            </button>
-            <p
-              id="quizMessage"
-              class="message"
-              role="status"
-              aria-live="polite"
-            ></p>
-          </form>
-          <section
-            id="quizResult"
-            class="result-panel"
-            hidden
-            aria-live="polite"
-          >
-            <span class="eyebrow">YOUR RESULT</span>
-            <h3 id="resultTitle">Quiz complete!</h3>
-            <p class="score" id="scoreText"></p>
-            <p id="resultFeedback"></p>
-            <div class="result-actions">
-              <button class="btn primary" type="button" id="reviewBtn">
-                Review answers</button
-              ><button class="btn secondary" type="button" id="retryBtn">
-                Try again
-              </button>
-            </div>
-            <div id="answerReview" hidden></div>
-          </section>
-        </div>
-      </section>
-
-      <section class="privacy-banner">
-        <h2>Your privacy matters.</h2>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="DigitalLearn home">
+      Digital<span>Learn</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"
+      aria-controls="siteNav">
+      ☰
+    </button>
+    <nav id="siteNav">
+      <a href="#home">Home</a>
+      <a href="#modules">Training Modules</a>
+      <a href="#quiz">Quiz</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <span class="eyebrow">COLLEGE PROJECT • DIGITAL LITERACY</span>
+        <h1>Training on DigiLocker, Aadhaar &amp; PAN Services</h1>
         <p>
-          This is an educational demo. It does not ask for Aadhaar numbers, PAN
-          numbers, OTPs, passwords, or identity-document images. If the optional
-          Google Sheets collector is configured, quiz scores and per-question
-          correctness are submitted for project analysis.
+          Learn how to use important digital government services safely,
+          explore bite-sized training modules, and check your knowledge with a
+          quick quiz.
         </p>
-      </section>
-    </main>
-    <footer>
-      DigitalLearn · College Digital Literacy Project<br /><small
-        >For actual services, visit official government portals. This project is
-        for education only.</small
-      >
-    </footer>
-    <script>
-      (() => {
-        // OPTIONAL DATA COLLECTION: paste your deployed Google Apps Script Web App URL here.
-        // Leave blank to run privately without sending results anywhere.
-        const GOOGLE_SHEETS_ENDPOINT =
-          "https://script.google.com/macros/s/AKfycbyvhRAJ2j47wMyyLGBaZUsM0NiJRZtlb20cxOqJcVk5uTbs4csR4laKcVI_T4NUrq8MoQ/exec";
-        const questions = [
-          {
-            q: "Which platform is designed for accessing and sharing digital documents?",
-            o: ["DigiLocker", "Social media", "Maps", "Email"],
-            a: 0,
-            why: "DigiLocker is designed to access and share digital documents.",
-          },
-          {
-            q: "Should you share an OTP with someone claiming to be support staff?",
-            o: ["Yes", "No"],
-            a: 1,
-            why: "Never share OTPs. Legitimate support should not ask you to disclose them.",
-          },
-          {
-            q: "What should you do before entering information on a government service website?",
-            o: [
-              "Verify the official website/domain",
-              "Click any advertisement",
-              "Use an unknown link",
-              "Share your password",
-            ],
-            a: 0,
-            why: "Check the official domain and make sure the connection and request are legitimate.",
-          },
-          {
-            q: "Which organisation is associated with Aadhaar services?",
-            o: ["UIDAI", "RBI", "IRDAI", "SEBI"],
-            a: 0,
-            why: "UIDAI is the authority associated with Aadhaar.",
-          },
-          {
-            q: "PAN-related online services are available through official Income Tax Department services.",
-            o: ["True", "False"],
-            a: 0,
-            why: "Use official Income Tax Department or authorised channels for PAN-related services.",
-          },
-          {
-            q: "Should this academic website ask you to enter your Aadhaar number?",
-            o: ["Yes", "No"],
-            a: 1,
-            why: "This training demo does not need Aadhaar numbers or other sensitive identifiers.",
-          },
-          {
-            q: "Which option is safer when accessing a government service?",
-            o: ["Use an official portal", "Use a random link from a message"],
-            a: 0,
-            why: "Navigate to the official portal independently rather than trusting an unexpected link.",
-          },
-          {
-            q: "What is a key benefit of digital documents?",
-            o: [
-              "Convenient access and sharing",
-              "They remove all security risks",
-              "They require no authentication",
-              "They are always public",
-            ],
-            a: 0,
-            why: "Digital documents can be convenient, but you should still protect account access.",
-          },
-          {
-            q: "You receive a suspicious link claiming to provide a government service. What should you do?",
-            o: [
-              "Verify independently using the official website",
-              "Enter your OTP immediately",
-            ],
-            a: 0,
-            why: "Verify the service independently and never enter credentials through suspicious links.",
-          },
-          {
-            q: "Which information should NOT be collected by this training project?",
-            o: [
-              "General age group",
-              "Aadhaar/PAN numbers",
-              "Training feedback",
-              "Learning preferences",
-            ],
-            a: 1,
-            why: "The project should not collect Aadhaar or PAN numbers.",
-          },
-        ];
-        const questionBox = document.getElementById("questions");
-        const form = document.getElementById("quizForm");
-        const message = document.getElementById("quizMessage");
-        const result = document.getElementById("quizResult");
-        const completed = new Set();
-        const sessionId =
-          window.crypto && crypto.randomUUID ?
-            crypto.randomUUID()
-          : "session-" +
-            Date.now() +
-            "-" +
-            Math.random().toString(36).slice(2, 9);
-        let attemptNumber = 0;
-        const esc = (s) =>
-          s.replace(
-            /[&<>"']/g,
-            (c) =>
-              ({
-                "&": "&amp;",
-                "<": "&lt;",
-                ">": "&gt;",
-                '"': "&quot;",
-                "'": "&#39;",
-              })[c],
-          );
-        questions.forEach((q, i) => {
-          const field = document.createElement("fieldset");
-          field.className = "question";
-          const legend = document.createElement("legend");
-          legend.textContent = `${i + 1}. ${q.q}`;
-          field.appendChild(legend);
-          q.o.forEach((option, j) => {
-            const label = document.createElement("label");
-            label.className = "option";
-            const input = document.createElement("input");
-            input.type = "radio";
-            input.name = `q${i}`;
-            input.value = String(j);
-            input.required = true;
-            const span = document.createElement("span");
-            span.textContent = option;
-            label.append(input, span);
-            field.appendChild(label);
-          });
-          questionBox.appendChild(field);
-        });
-        function updateProgress() {
-          const n = completed.size;
-          document.getElementById("progressText").textContent =
-            `${n} of 4 modules`;
-          document.getElementById("progressBar").style.width =
-            `${(n / 4) * 100}%`;
-          document.querySelectorAll("[data-complete]").forEach((btn) => {
-            const done = completed.has(btn.dataset.complete);
-            btn.classList.toggle("is-complete", done);
-            btn.textContent =
-              done ? "✓ Completed · Undo" : "Mark module complete";
-            btn.setAttribute("aria-pressed", String(done));
-          });
-        }
-        document.querySelectorAll("[data-complete]").forEach((btn) =>
-          btn.addEventListener("click", () => {
-            const key = btn.dataset.complete;
-            completed.has(key) ? completed.delete(key) : completed.add(key);
-            updateProgress();
-          }),
-        );
-        form.addEventListener("submit", (e) => {
-          e.preventDefault();
-          const answers = questions.map((q, i) => {
-            const selected = form.querySelector(`input[name="q${i}"]:checked`);
-            return selected ? Number(selected.value) : -1;
-          });
-          const missing = answers.findIndex((a) => a < 0);
-          if (missing >= 0) {
-            message.textContent = `Please answer question ${missing + 1} before submitting.`;
-            form.querySelector(`input[name="q${missing}"]`).focus();
-            return;
-          }
-          const score = answers.reduce(
-            (sum, a, i) => sum + (a === questions[i].a ? 1 : 0),
-            0,
-          );
-          attemptNumber += 1;
-          const attemptRecord = {
-            event: "quiz_attempt",
-            timestamp: new Date().toISOString(),
-            sessionId,
-            attemptNumber,
-            totalQuestions: questions.length,
-            score,
-            correct: score,
-            wrong: questions.length - score,
-            percentage: Math.round((score / questions.length) * 100),
-            answers: questions.map((q, i) => ({
-              questionNumber: i + 1,
-              selectedAnswer: q.o[answers[i]],
-              correctAnswer: q.o[q.a],
-              isCorrect: answers[i] === q.a,
-            })),
-          };
-          if (GOOGLE_SHEETS_ENDPOINT) {
-            fetch(GOOGLE_SHEETS_ENDPOINT, {
-              method: "POST",
-              mode: "no-cors",
-              headers: { "Content-Type": "text/plain;charset=utf-8" },
-              body: JSON.stringify(attemptRecord),
-              keepalive: true,
-            })
-              .then(() => {
-                message.textContent =
-                  "Quiz result submission sent to the project report sheet.";
-              })
-              .catch(() => {
-                message.textContent =
-                  "Your score is shown below, but the report upload may have failed. Please tell the project coordinator.";
-              });
-          }
+        <div class="actions">
+          <a class="btn primary" href="#modules">Explore Training ↓</a>
+          <a class="btn secondary" href="#quiz">Take the Quiz</a>
+        </div>
+        <p class="hero-note">
+          ✓ Free learning · ✓ Mobile friendly · ✓ No Aadhaar or PAN number
+          required
+        </p>
+      </div>
+      <aside class="hero-card" aria-label="Course steps">
+        <div class="hero-step">
+          <span class="stat">01</span>
+          <div>
+            <strong>Learn the basics</strong>
+            <p>DigiLocker, Aadhaar and PAN</p>
+          </div>
+        </div>
+        <div class="hero-step">
+          <span class="stat">02</span>
+          <div>
+            <strong>Stay safe online</strong>
+            <p>Spot scams and protect details</p>
+          </div>
+        </div>
+        <div class="hero-step">
+          <span class="stat">03</span>
+          <div>
+            <strong>Test your knowledge</strong>
+            <p>10 quick multiple-choice questions</p>
+          </div>
+        </div>
+        <div class="progress-wrap">
+          <div class="progress-label">
+            <span>Your learning journey</span><strong id="progressText">0 of 4 modules</strong>
+          </div>
+          <div class="progress"><span id="progressBar"></span></div>
+        </div>
+      </aside>
+    </section>
 
-          document.getElementById("scoreText").textContent =
-            `${score} / ${questions.length} (${Math.round((score / questions.length) * 100)}%)`;
-          document.getElementById("resultTitle").textContent =
-            score >= 8 ? "Excellent work!"
+    <section class="section intro-section">
+      <div class="section-head">
+        <span class="eyebrow">LEARN AT YOUR OWN PACE</span>
+        <h2>Everything in one place.</h2>
+        <p class="muted">
+          No account, backend or database needed for this learning demo. Read
+          a module, mark it complete, and take the quiz when you are ready.
+        </p>
+      </div>
+      <div class="feature-row">
+        <div class="feature">
+          <span class="feature-icon">📘</span>
+          <div>
+            <strong>Simple explanations</strong>
+            <p>Clear summaries of important services.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🛡️</span>
+          <div>
+            <strong>Safety first</strong>
+            <p>Learn how to protect personal information.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">📝</span>
+          <div>
+            <strong>Instant quiz result</strong>
+            <p>Get your score and review the answers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section modules-section" id="modules">
+      <div class="section-head left">
+        <span class="eyebrow">TRAINING MODULES</span>
+        <h2>Digital services, explained simply.</h2>
+        <p class="muted">
+          Read through each module and mark it complete to track your
+          progress.
+        </p>
+      </div>
+      <div class="module-grid">
+        <article class="module" data-module="digilocker">
+          <div class="module-top">
+            <span class="module-num">MODULE 01</span><span class="module-icon">📂</span>
+          </div>
+          <h3>DigiLocker</h3>
+          <p>
+            DigiLocker is a Government of India digital platform for accessing
+            and sharing digital documents.
+          </p>
+          <h4>Key things to know</h4>
+          <ul>
+            <li>It can provide access to issued digital documents.</li>
+            <li>Use the official DigiLocker website or app.</li>
+            <li>Keep account credentials and OTPs private.</li>
+            <li>Check document details before sharing them.</li>
+          </ul>
+          <div class="tip">
+            <strong>Safety tip:</strong> Never tell an OTP to someone claiming
+            to be support staff.
+          </div>
+          <button class="btn module-complete" type="button" data-complete="digilocker">
+            Mark module complete
+          </button>
+        </article>
+        <article class="module" data-module="aadhaar">
+          <div class="module-top">
+            <span class="module-num">MODULE 02</span><span class="module-icon">🪪</span>
+          </div>
+          <h3>Aadhaar Services</h3>
+          <p>
+            Official Aadhaar services help people access eligible services and
+            manage selected Aadhaar-related tasks.
+          </p>
+          <h4>Key things to know</h4>
+          <ul>
+            <li>Use official UIDAI channels for Aadhaar services.</li>
+            <li>Review the website address before entering information.</li>
+            <li>Share Aadhaar information only when genuinely required.</li>
+            <li>Never publish Aadhaar numbers or OTPs in public.</li>
+          </ul>
+          <div class="tip">
+            <strong>Safety tip:</strong> This training website will never ask
+            you to enter an Aadhaar number.
+          </div>
+          <button class="btn module-complete" type="button" data-complete="aadhaar">
+            Mark module complete
+          </button>
+        </article>
+        <article class="module" data-module="pan">
+          <div class="module-top">
+            <span class="module-num">MODULE 03</span><span class="module-icon">🧾</span>
+          </div>
+          <h3>PAN Services</h3>
+          <p>
+            PAN-related online services include application, verification and
+            other tax-service workflows.
+          </p>
+          <h4>Key things to know</h4>
+          <ul>
+            <li>
+              Use official Income Tax Department or authorised service
+              channels.
+            </li>
+            <li>
+              Understand the difference between official sites and lookalikes.
+            </li>
+            <li>
+              Do not send PAN details through unknown links or messages.
+            </li>
+            <li>Be careful with unexpected fees or urgent requests.</li>
+          </ul>
+          <div class="tip">
+            <strong>Safety tip:</strong> Never enter your PAN details into
+            this academic training demo.
+          </div>
+          <button class="btn module-complete" type="button" data-complete="pan">
+            Mark module complete
+          </button>
+        </article>
+        <article class="module safety-module" data-module="safety">
+          <div class="module-top">
+            <span class="module-num">MODULE 04</span><span class="module-icon">🔐</span>
+          </div>
+          <h3>Digital Safety</h3>
+          <p>
+            Good habits help you use online government services with more
+            confidence.
+          </p>
+          <ul class="safety-list">
+            <li>✓ Never share OTPs or passwords.</li>
+            <li>✓ Verify the domain before signing in.</li>
+            <li>✓ Avoid unknown links in SMS or messaging apps.</li>
+            <li>✓ Use a screen lock and sign out on shared devices.</li>
+            <li>✓ Share only information that is genuinely required.</li>
+          </ul>
+          <div class="tip safety-tip">
+            <strong>Remember:</strong> If a message pressures you to act
+            immediately, pause and verify it independently.
+          </div>
+          <button class="btn module-complete" type="button" data-complete="safety">
+            Mark module complete
+          </button>
+        </article>
+      </div>
+      <div class="center">
+        <a class="btn primary" href="#quiz">I’m ready for the quiz →</a>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="form-wrap wide">
+        <div class="quiz-heading">
+          <div>
+            <span class="eyebrow">KNOWLEDGE QUIZ</span>
+            <h2>Check what you learned.</h2>
+            <p class="muted">
+              10 questions · One answer per question · Instant result
+            </p>
+          </div>
+          <div class="quiz-badge">
+            10<br />
+            <small>questions</small>
+          </div>
+        </div>
+        <form id="quizForm">
+          <div id="questions"></div>
+          <button class="btn primary full" type="submit">
+            Submit Quiz →
+          </button>
+          <p id="quizMessage" class="message" role="status" aria-live="polite"></p>
+        </form>
+        <section id="quizResult" class="result-panel" hidden aria-live="polite">
+          <span class="eyebrow">YOUR RESULT</span>
+          <h3 id="resultTitle">Quiz complete!</h3>
+          <p class="score" id="scoreText"></p>
+          <p id="resultFeedback"></p>
+          <div class="result-actions">
+            <button class="btn primary" type="button" id="reviewBtn">
+              Review answers</button><button class="btn secondary" type="button" id="retryBtn">
+              Try again
+            </button>
+          </div>
+          <div id="answerReview" hidden></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="privacy-banner">
+      <h2>Your privacy matters.</h2>
+      <p>
+        This is an educational demo. It does not ask for Aadhaar numbers, PAN
+        numbers, OTPs, passwords, or identity-document images. If the optional
+        Google Sheets collector is configured, quiz scores and per-question
+        correctness are submitted for project analysis.
+      </p>
+    </section>
+  </main>
+  <footer>
+    DigitalLearn · College Digital Literacy Project<br /><small>For actual services, visit official government portals.
+      This project is
+      for education only.</small>
+  </footer>
+  <script>
+    (() => {
+      // OPTIONAL DATA COLLECTION: paste your deployed Google Apps Script Web App URL here.
+      // Leave blank to run privately without sending results anywhere.
+      const GOOGLE_SHEETS_ENDPOINT =
+        "https://script.google.com/macros/s/AKfycbyvhRAJ2j47wMyyLGBaZUsM0NiJRZtlb20cxOqJcVk5uTbs4csR4laKcVI_T4NUrq8MoQ/exec";
+      const questions = [
+        {
+          q: "Which platform is designed for accessing and sharing digital documents?",
+          o: ["DigiLocker", "Social media", "Maps", "Email"],
+          a: 0,
+          why: "DigiLocker is designed to access and share digital documents.",
+        },
+        {
+          q: "Should you share an OTP with someone claiming to be support staff?",
+          o: ["Yes", "No"],
+          a: 1,
+          why: "Never share OTPs. Legitimate support should not ask you to disclose them.",
+        },
+        {
+          q: "What should you do before entering information on a government service website?",
+          o: [
+            "Verify the official website/domain",
+            "Click any advertisement",
+            "Use an unknown link",
+            "Share your password",
+          ],
+          a: 0,
+          why: "Check the official domain and make sure the connection and request are legitimate.",
+        },
+        {
+          q: "Which organisation is associated with Aadhaar services?",
+          o: ["UIDAI", "RBI", "IRDAI", "SEBI"],
+          a: 0,
+          why: "UIDAI is the authority associated with Aadhaar.",
+        },
+        {
+          q: "PAN-related online services are available through official Income Tax Department services.",
+          o: ["True", "False"],
+          a: 0,
+          why: "Use official Income Tax Department or authorised channels for PAN-related services.",
+        },
+        {
+          q: "Should this academic website ask you to enter your Aadhaar number?",
+          o: ["Yes", "No"],
+          a: 1,
+          why: "This training demo does not need Aadhaar numbers or other sensitive identifiers.",
+        },
+        {
+          q: "Which option is safer when accessing a government service?",
+          o: ["Use an official portal", "Use a random link from a message"],
+          a: 0,
+          why: "Navigate to the official portal independently rather than trusting an unexpected link.",
+        },
+        {
+          q: "What is a key benefit of digital documents?",
+          o: [
+            "Convenient access and sharing",
+            "They remove all security risks",
+            "They require no authentication",
+            "They are always public",
+          ],
+          a: 0,
+          why: "Digital documents can be convenient, but you should still protect account access.",
+        },
+        {
+          q: "You receive a suspicious link claiming to provide a government service. What should you do?",
+          o: [
+            "Verify independently using the official website",
+            "Enter your OTP immediately",
+          ],
+          a: 0,
+          why: "Verify the service independently and never enter credentials through suspicious links.",
+        },
+        {
+          q: "Which information should NOT be collected by this training project?",
+          o: [
+            "General age group",
+            "Aadhaar/PAN numbers",
+            "Training feedback",
+            "Learning preferences",
+          ],
+          a: 1,
+          why: "The project should not collect Aadhaar or PAN numbers.",
+        },
+      ];
+      const questionBox = document.getElementById("questions");
+      const form = document.getElementById("quizForm");
+      const message = document.getElementById("quizMessage");
+      const result = document.getElementById("quizResult");
+      const completed = new Set();
+      const sessionId =
+        window.crypto && crypto.randomUUID ?
+          crypto.randomUUID()
+          : "session-" +
+          Date.now() +
+          "-" +
+          Math.random().toString(36).slice(2, 9);
+      let attemptNumber = 0;
+      const esc = (s) =>
+        s.replace(
+          /[&<>"']/g,
+          (c) =>
+            ({
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&#39;",
+            })[c],
+        );
+      questions.forEach((q, i) => {
+        const field = document.createElement("fieldset");
+        field.className = "question";
+        const legend = document.createElement("legend");
+        legend.textContent = `${i + 1}. ${q.q}`;
+        field.appendChild(legend);
+        q.o.forEach((option, j) => {
+          const label = document.createElement("label");
+          label.className = "option";
+          const input = document.createElement("input");
+          input.type = "radio";
+          input.name = `q${i}`;
+          input.value = String(j);
+          input.required = true;
+          const span = document.createElement("span");
+          span.textContent = option;
+          label.append(input, span);
+          field.appendChild(label);
+        });
+        questionBox.appendChild(field);
+      });
+      function updateProgress() {
+        const n = completed.size;
+        document.getElementById("progressText").textContent =
+          `${n} of 4 modules`;
+        document.getElementById("progressBar").style.width =
+          `${(n / 4) * 100}%`;
+        document.querySelectorAll("[data-complete]").forEach((btn) => {
+          const done = completed.has(btn.dataset.complete);
+          btn.classList.toggle("is-complete", done);
+          btn.textContent =
+            done ? "✓ Completed · Undo" : "Mark module complete";
+          btn.setAttribute("aria-pressed", String(done));
+        });
+      }
+      document.querySelectorAll("[data-complete]").forEach((btn) =>
+        btn.addEventListener("click", () => {
+          const key = btn.dataset.complete;
+          completed.has(key) ? completed.delete(key) : completed.add(key);
+          updateProgress();
+        }),
+      );
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const answers = questions.map((q, i) => {
+          const selected = form.querySelector(`input[name="q${i}"]:checked`);
+          return selected ? Number(selected.value) : -1;
+        });
+        const missing = answers.findIndex((a) => a < 0);
+        if (missing >= 0) {
+          message.textContent = `Please answer question ${missing + 1} before submitting.`;
+          form.querySelector(`input[name="q${missing}"]`).focus();
+          return;
+        }
+        const score = answers.reduce(
+          (sum, a, i) => sum + (a === questions[i].a ? 1 : 0),
+          0,
+        );
+        attemptNumber += 1;
+        const attemptRecord = {
+          event: "quiz_attempt",
+          timestamp: new Date().toISOString(),
+          sessionId,
+          attemptNumber,
+          totalQuestions: questions.length,
+          score,
+          correct: score,
+          wrong: questions.length - score,
+          percentage: Math.round((score / questions.length) * 100),
+          answers: questions.map((q, i) => ({
+            questionNumber: i + 1,
+            selectedAnswer: q.o[answers[i]],
+            correctAnswer: q.o[q.a],
+            isCorrect: answers[i] === q.a,
+          })),
+        };
+        if (GOOGLE_SHEETS_ENDPOINT) {
+          fetch(GOOGLE_SHEETS_ENDPOINT, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "text/plain;charset=utf-8" },
+            body: JSON.stringify(attemptRecord),
+            keepalive: true,
+          })
+            .then(() => {
+              message.textContent =
+                "Quiz result submission sent to the project report sheet.";
+            })
+            .catch(() => {
+              message.textContent =
+                "Your score is shown below, but the report upload may have failed. Please tell the project coordinator.";
+            });
+        }
+
+        document.getElementById("scoreText").textContent =
+          `${score} / ${questions.length} (${Math.round((score / questions.length) * 100)}%)`;
+        document.getElementById("resultTitle").textContent =
+          score >= 8 ? "Excellent work!"
             : score >= 5 ? "Good effort!"
-            : "Keep learning — you can do it!";
-          document.getElementById("resultFeedback").textContent =
-            score >= 8 ?
-              "You have a strong understanding of digital services and online safety."
+              : "Keep learning — you can do it!";
+        document.getElementById("resultFeedback").textContent =
+          score >= 8 ?
+            "You have a strong understanding of digital services and online safety."
             : score >= 5 ?
               "Review the explanations below and revisit any module you want to strengthen."
-            : "Review the training modules above, then try the quiz again.";
-          const review = document.getElementById("answerReview");
-          review.innerHTML = "";
-          questions.forEach((q, i) => {
-            const row = document.createElement("article");
-            row.className =
-              "review-item " + (answers[i] === q.a ? "correct" : "incorrect");
-            const h = document.createElement("h4");
-            h.textContent = `${i + 1}. ${q.q}`;
-            const your = document.createElement("p");
-            your.textContent = `Your answer: ${q.o[answers[i]]}`;
-            const right = document.createElement("p");
-            right.textContent = `Correct answer: ${q.o[q.a]}`;
-            const why = document.createElement("p");
-            why.textContent = q.why;
-            row.append(h, your, right, why);
-            review.appendChild(row);
-          });
-          result.hidden = false;
-          result.scrollIntoView({ behavior: "smooth", block: "start" });
-          message.textContent = "";
+              : "Review the training modules above, then try the quiz again.";
+        const review = document.getElementById("answerReview");
+        review.innerHTML = "";
+        questions.forEach((q, i) => {
+          const row = document.createElement("article");
+          row.className =
+            "review-item " + (answers[i] === q.a ? "correct" : "incorrect");
+          const h = document.createElement("h4");
+          h.textContent = `${i + 1}. ${q.q}`;
+          const your = document.createElement("p");
+          your.textContent = `Your answer: ${q.o[answers[i]]}`;
+          const right = document.createElement("p");
+          right.textContent = `Correct answer: ${q.o[q.a]}`;
+          const why = document.createElement("p");
+          why.textContent = q.why;
+          row.append(h, your, right, why);
+          review.appendChild(row);
         });
-        document.getElementById("reviewBtn").addEventListener("click", () => {
-          const box = document.getElementById("answerReview");
-          box.hidden = !box.hidden;
-          document.getElementById("reviewBtn").textContent =
-            box.hidden ? "Review answers" : "Hide answer review";
-        });
-        document.getElementById("retryBtn").addEventListener("click", () => {
-          form.reset();
-          result.hidden = true;
-          document.getElementById("answerReview").hidden = true;
-          message.textContent = "";
-          document
-            .getElementById("quiz")
-            .scrollIntoView({ behavior: "smooth" });
-        });
-        const toggle = document.getElementById("menuToggle"),
-          nav = document.getElementById("siteNav");
-        toggle.addEventListener("click", () => {
-          const open = nav.classList.toggle("nav-open");
-          toggle.setAttribute("aria-expanded", String(open));
-          toggle.setAttribute(
-            "aria-label",
-            open ? "Close navigation" : "Open navigation",
-          );
-          toggle.textContent = open ? "✕" : "☰";
-        });
-        nav.querySelectorAll("a").forEach((a) =>
-          a.addEventListener("click", () => {
-            nav.classList.remove("nav-open");
-            toggle.setAttribute("aria-expanded", "false");
-            toggle.setAttribute("aria-label", "Open navigation");
-            toggle.textContent = "☰";
-          }),
+        result.hidden = false;
+        result.scrollIntoView({ behavior: "smooth", block: "start" });
+        message.textContent = "";
+      });
+      document.getElementById("reviewBtn").addEventListener("click", () => {
+        const box = document.getElementById("answerReview");
+        box.hidden = !box.hidden;
+        document.getElementById("reviewBtn").textContent =
+          box.hidden ? "Review answers" : "Hide answer review";
+      });
+      document.getElementById("retryBtn").addEventListener("click", () => {
+        form.reset();
+        result.hidden = true;
+        document.getElementById("answerReview").hidden = true;
+        message.textContent = "";
+        document
+          .getElementById("quiz")
+          .scrollIntoView({ behavior: "smooth" });
+      });
+      const toggle = document.getElementById("menuToggle"),
+        nav = document.getElementById("siteNav");
+      toggle.addEventListener("click", () => {
+        const open = nav.classList.toggle("nav-open");
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.setAttribute(
+          "aria-label",
+          open ? "Close navigation" : "Open navigation",
         );
-        updateProgress();
-      })();
-    </script>
-  </body>
+        toggle.textContent = open ? "✕" : "☰";
+      });
+      nav.querySelectorAll("a").forEach((a) =>
+        a.addEventListener("click", () => {
+          nav.classList.remove("nav-open");
+          toggle.setAttribute("aria-expanded", "false");
+          toggle.setAttribute("aria-label", "Open navigation");
+          toggle.textContent = "☰";
+        }),
+      );
+      updateProgress();
+    })();
+  </script>
+</body>
 </html>
